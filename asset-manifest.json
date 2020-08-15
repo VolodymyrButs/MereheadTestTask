@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/MereheadTestTask/static/js/main.4b505499.chunk.js",
-    "main.js.map": "/MereheadTestTask/static/js/main.4b505499.chunk.js.map",
+    "main.js": "/MereheadTestTask/static/js/main.ea17af96.chunk.js",
+    "main.js.map": "/MereheadTestTask/static/js/main.ea17af96.chunk.js.map",
     "runtime-main.js": "/MereheadTestTask/static/js/runtime-main.4cfc7d1f.js",
     "runtime-main.js.map": "/MereheadTestTask/static/js/runtime-main.4cfc7d1f.js.map",
     "static/js/2.a8a99eb9.chunk.js": "/MereheadTestTask/static/js/2.a8a99eb9.chunk.js",
     "static/js/2.a8a99eb9.chunk.js.map": "/MereheadTestTask/static/js/2.a8a99eb9.chunk.js.map",
     "index.html": "/MereheadTestTask/index.html",
-    "precache-manifest.2521097a8b0654e6af0a54fd320c2d8b.js": "/MereheadTestTask/precache-manifest.2521097a8b0654e6af0a54fd320c2d8b.js",
+    "precache-manifest.fc3b4d18b417fb50967bc58aa163681b.js": "/MereheadTestTask/precache-manifest.fc3b4d18b417fb50967bc58aa163681b.js",
     "service-worker.js": "/MereheadTestTask/service-worker.js",
     "static/js/2.a8a99eb9.chunk.js.LICENSE.txt": "/MereheadTestTask/static/js/2.a8a99eb9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4cfc7d1f.js",
     "static/js/2.a8a99eb9.chunk.js",
-    "static/js/main.4b505499.chunk.js"
+    "static/js/main.ea17af96.chunk.js"
   ]
 }
