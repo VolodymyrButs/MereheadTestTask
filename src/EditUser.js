@@ -20,29 +20,35 @@ export const EditUser = ({ user, getUsers }) => {
     const handlerDeleteUser = () => {
         const del = window.confirm('Delete?')
         del &&
-            fetch(`http://77.120.241.80:8911/api/user/${user.id}`, {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }).then((response) => {
+            fetch(
+                `https://cors-anywhere.herokuapp.com/http://77.120.241.80:8911/api/user/${user.id}`,
+                {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
+            ).then((response) => {
                 response.ok && getUsers()
             })
     }
 
     const handlerEditUser = (e) => {
         e.preventDefault()
-        fetch(`http://77.120.241.80:8911/api/user/${user.id}`, {
-            method: 'PUT',
-            body: JSON.stringify({
-                name: editedUserName,
-                surname: editedUserSurname,
-                desc: editedUserDescription,
-            }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then((response) => {
+        fetch(
+            `https://cors-anywhere.herokuapp.com/http://77.120.241.80:8911/api/user/${user.id}`,
+            {
+                method: 'PUT',
+                body: JSON.stringify({
+                    name: editedUserName,
+                    surname: editedUserSurname,
+                    desc: editedUserDescription,
+                }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        ).then((response) => {
             response && getUsers()
             response && setIsVisibleEditWindow(false)
         })

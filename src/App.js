@@ -45,7 +45,9 @@ const App = () => {
     }, [list])
 
     const getUsers = () => {
-        fetch(`http://77.120.241.80:8911/api/users`)
+        fetch(
+            `https://cors-anywhere.herokuapp.com/http://77.120.241.80:8911/api/users`
+        )
             .then((response) => response.json())
             .then((data) => {
                 dispatch({

@@ -41,17 +41,20 @@ export const CreateUser = ({ getUsers }) => {
 
     const handleCreateUser = (e) => {
         e.preventDefault()
-        fetch(`http://77.120.241.80:8911/api/users`, {
-            method: 'POST',
-            body: JSON.stringify({
-                name: userName,
-                surname: userSurname,
-                desc: userDescription,
-            }),
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        }).then((response) => response && getUsers())
+        fetch(
+            `https://cors-anywhere.herokuapp.com/http://77.120.241.80:8911/api/users`,
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    name: userName,
+                    surname: userSurname,
+                    desc: userDescription,
+                }),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        ).then((response) => response && getUsers())
     }
     return (
         <FormStyled onSubmit={handleCreateUser}>
