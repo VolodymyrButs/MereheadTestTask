@@ -45,7 +45,7 @@ const App = () => {
     }, [list])
 
     const getUsers = () => {
-        fetch(`https://77.120.241.80:8911/api/users`)
+        fetch(`http://77.120.241.80:8911/api/users`)
             .then((response) => response.json())
             .then((data) => {
                 dispatch({
